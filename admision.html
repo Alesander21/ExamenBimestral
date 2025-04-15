@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admision</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+     <script defer src="https://app.embed.im/snow.js"></script>
+  </head>
+  <style>
+    .info-card {
+      border: 1px solid #5faacc;
+      border-radius: 0.375rem; /* Bootstrap's default border-radius */
+      padding: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      transform: translateY(80px); /* Move down for animation */
+      animation: fadeInUp 15s ease-out forwards; /* Apply animation */
+  }
+  .info-card :hover{
+    border-radius: 0.2rem;
+    border: 2px solid rgb(102, 212, 179);
+    box-shadow: 3px 3px 3px rgb(92, 121, 206);
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+
+  }
+  .signo {
+      background-color: #0d6efd; /* Bootstrap's primary color */
+      color: white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -15px;
+      left: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 3px 3px 3px rgba(21, 235, 217, 0.075); /* Bootstrap's default box-shadow */
+  }
+
+  .info-card ul {
+      padding-left: 20px;
+  }
+
+  .info-card li {
+      margin-bottom: 0.25rem; /* Slightly smaller margin */
+  }
+
+  @keyframes fadeInUp {
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  </style>
+  <body>
+    <header>        
+      <div class="menu bg-dark text-white d-flex justify-content-end align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-image: url(img/degradado.jpeg);background-size: cover;background-position: center;background-repeat: no-repeat;width: 100%;">
+          <div class="container">
+            <a class="nav-link active text-info" href="#"><img src="img/logo_white.png" alt="" width="45" height="45"></a>
+              <a class="navbar-brand " href="#">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active text-white p-3" href="index.html"><span><img src="iconos/casita.png" alt="" width="20" height="20"></span> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-white p-3" href="quienessomos.html"><span><img src="iconos/personas.png" alt="" width="20" height="20"></span> ¿Quienes Somos?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white p-3" href="admision.html"><span><img src="iconos/libro-cerrado.png" alt="" width="20" height="20"></span> Admision</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-white p-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"><span><img src="iconos/gorro-de-graduacion.png" alt="" width="20" height="20"></span> Nuestras Carreras</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="sistemas.html">Sistemas Informaticos</a></li>
+                        <li><a class="dropdown-item" href="secretariado.html">Secretariado Ejecutivo</a></li>
+                        <li><a class="dropdown-item" href="telecom.html">Telecomunicaciones</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white p-3" href="pvirtual.html"><span><img src="iconos/nube.png" alt="" width="20" height="20"></span> Plataforma Virtual</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white p-3" href="contact.html"><span><img src="iconos/agenda.png" alt="" width="20" height="20"></span> Contácto</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      </div>
+  </header>
+  <hr>
+    <main>
+      <div class="final text-center p-3" style="background-color: rgb(56, 56, 141);">
+        <img src="img/logo_white.png" alt="" class="p-2">
+      </div>
+      <div class="titulo">
+        <p class="text-center p-2 display-6 fw-normal">PREGUNTAS FRECUENTES</p>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+
+              <div class="info-card">
+                <div class="signo" title="Inicio de inscripciones">?</div>
+                <h4 class="fs-4 ">¿Cuándo empiezan las inscripciones?</h4>
+                <p>El instituto aplica el régimen ANUAL, por tanto las inscripciones se realizan al principio de cada año según calendario emitido por el Ministerio de Educación.</p>
+            </div>
+                <div class="info-card">
+                    <div class="signo" title="Requisitos básicos">?</div>
+                    <h4>Estudiantes Nacionales</h4>
+                    <p>¿Cuáles son los requisitos básicos de inscripción?</p>
+                    <ul>
+                        <li>Original y Fotocopia simple del Diploma de Bachiller.</li>
+                        <li>Original y Fotocopia simple de Cédula de Identidad vigente.</li>
+                        <li>Original y Fotocopia simple de Certificado de Nacimiento.</li>
+                        <li>4 fotografías tamaño 3x3 cm con fondo color perla, traje formal (nuevos).</li>
+                        <li>Boletín de Calificaciones de la gestión anterior (antiguos).</li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+              <div class="info-card">
+                  <div class="signo" title="Estudiantes Extranjeros">?</div>
+                  <h4>Estudiantes Extranjeros</h4>
+                  <p>¿Cuáles son los requisitos básicos de inscripción?</p>
+                  <ul>
+                      <li> Fotocopia simple de la Cédula de Extrangeria vigente.</li>
+                      <li>Fotocopia simple de Pasaporte con visa vigente, acompañado de original para su verificación.</li>
+                      <li>Fotocopia del Diploma de Bachiller o su equivalente legalizado por las instancias correspondientes.</li>
+                      <li>4 fotografías tamaño 3x3 con fondo color perla (traje formal).</li>
+                  </ul>
+              </div>
+
+              <div class="info-card">
+                  <div class="signo" title="Convalidaciones">?</div>
+                  <h4 class="fs-4 ">¿Cuáles son los requisitos para las convalidaciones?</h4>
+                  <p>Certificado de Notas Originales.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-md-6">
+            <div class="info-card">
+                <div class="signo" title="Direccion de la Institucion">?</div>
+                <h4>¿Cuál es la dirección exacta de la institución?</h4>
+                <p>Calle Oblitas Nº364 entre Pagador y Potosí</p>
+            </div>
+
+            <div class="info-card">
+              <div class="signo" title="Costo de la inscripcion">?</div>
+              <h4>¿Cúal es el costo de la inscripción?</h4>
+              <p> Para inscribirse a una de nuestras carreras el estudiante deberá cancelar un total de 510 Bs. como aporte anual y único pago en toda la gestión.</p>
+          </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+          <div class="info-card">
+              <div class="signo" title="Telefono de la Institucion">?</div>
+              <h4>¿Cuáles son los teléfonos de la institución?</h4>
+              <p>  (+591) 2 52 45400</p>
+          </div>
+
+          <div class="info-card">
+              <div class="signo" title="Horarios de clases">?</div>
+              <h4 class="fs-4 ">¿Cúal es el horario de clases?</h4>
+              <p>¿Cúal es el horario de clases?</p>
+              <p>Turno mañana: 07:50 a 12:30 <br>Turno tarde: 13:50 a 18:30</p>
+          </div>
+      </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="info-card">
+            <div class="signo" title="Modalidades de Titulacion">?</div>
+            <h4>¿Cuáles son las modalidades para la titulación?</h4>
+            <p>Sistemas Informáticos</p>
+            <p>La Carrera de Sistemas Informáticos establece las siguientes modalidades de titulación para obtener el Título de Técnico Superior en Provisión Nacional.</p>
+            <ul>
+                <li> Proyecto de Grado</li>
+                <li>Proyecto Sociocomunitario Productivo</li>
+                <li>Proyecto de Emprendimiento Productivo</li>
+                <li>Trabajo Dirigido Externo</li>
+                <li>Graduación por Excelencia Académica</li>
+                <li>Graduación por Experiencia Laboral</li>
+                <li>Prueba Académica de Grado</li>
+            </ul>
+            <hr>
+            <p>Secretariado Ejecutivo</p>
+            <p>La Carrera de Secretariado Ejecutivo establece las siguientes modalidades de titulación para obtener el Título de Técnico Superior en Provisión Nacional.</p>
+            <ul>
+                <li> Proyecto de Grado</li>
+                <li>Proyecto Sociocomunitario Productivo</li>
+                <li>Proyecto de Emprendimiento Productivo</li>
+                <li>Trabajo Dirigido Externo</li>
+                <li>Graduación por Excelencia Académica</li>
+                <li>Graduación por Experiencia Laboral</li>
+                <li>Prueba Académica de Grado</li>
+            </ul>
+            <hr>
+            <p>Telecomunicaciones</p>
+            <p>La Carrera de Telecomunicaciones Ejecutivo establece las siguientes modalidades de titulación para obtener el Título de Técnico Superior en Provisión Nacional.</p>
+            <ul>
+                <li> Proyecto de Grado</li>
+                <li>Proyecto Sociocomunitario Productivo</li>
+                <li>Proyecto de Emprendimiento Productivo</li>
+                <li>Trabajo Dirigido Externo</li>
+                <li>Graduación por Excelencia Académica</li>
+                <li>Graduación por Experiencia Laboral</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+    </main>
+    <footer>
+      <div class="final p-1 text-center " style="background-color: #264a80;">
+        <img src="img/logo_white.png" alt="" class="p-2" >
+      </div>
+      <hr>
+      <div class="mapa text-center">
+        <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60726.73763883304!2d-67.108205!3d-17.959135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e2b0a679d6e793%3A0x4ea39a9506e08039!2zSW5zdGl0dXRvIFTDqWNuaWNvIEplc8O6cyBNYXLDrWE!5e0!3m2!1ses!2sus!4v1744423331849!5m2!1ses!2sus" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-sm col-md col-xl"></iframe>
+        </div>
+      </div>
+      <div class="enlaces p-5 text-center" style="background-color: rgb(22, 64, 100);">
+        <a href="https://www.facebook.com/IntJem/"><img src="iconos/facebook (1).png" alt="" class="p-2"></a>
+        <a href="https://plataforma.intjem.edu.bo/"><img src="iconos/plataforma-digital.png" alt="" class="p-2"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img src="iconos/gmail.png" alt="" class="p-2"></a>
+        <a href="https://x.com/InT_JesusMaria"><img src="iconos/gorjeo.png" alt="" class="p-2"></a>
+        <a href="https://www.instagram.com/intjem.bo/"><img src="iconos/instagram.png" alt="" class="p-2"></a>
+      </div>
+      <div class="footer-copyright">
+        <div class="p-2 text-center text-white" style="background-color: rgb(12, 27, 54);">
+            <a>Copyright © 2025 Instituto Técnico Jesús María Todos los derechos reservados.</a>
+        </div>
+  </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

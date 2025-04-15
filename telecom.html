@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Telecomunicaciones</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+     <script defer src="https://app.embed.im/snow.js"></script>
+  </head>
+  <style>
+    header {
+      background-image: url(img/telecom.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 38rem;
+    }
+    .card-effect {
+        transition: transform 0.3s ease-in-out;
+    }
+    .card-effect:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .carousel-inner img {
+        max-height: 400px;
+        object-fit: cover;
+    }
+    .jumbotron-custom {
+        background-color: #f8f9fa;
+        padding: 4rem 2rem;
+        margin-bottom: 2rem;
+        border-radius: 0.3rem;
+    }
+    .table-container {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      .table-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .table-button {
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        background: #e5e7eb;
+        color: #4b5563;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .table-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .table-button.active {
+        background: linear-gradient(135deg, #44d3bb 0%, #588fee 100%);
+        color: white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .table-button i {
+        font-size: 1.2rem;
+      }
+
+      .schedule-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .schedule-table th {
+        background: linear-gradient(135deg, #60d3cd 0%, #308fce 100%);
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      .schedule-table td {
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+      }
+
+      .schedule-table tr:hover {
+        background-color: #f8f9fa;
+      }
+
+      .schedule-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      .schedule-table .code {
+        font-weight: 600;
+        color: #3dafe4;
+      }
+
+      .schedule-table .subject {
+        text-align: left;
+      }
+
+      /* Ocultar todas las tablas por defecto */
+      .schedule-table {
+        display: none;
+      }
+
+      .schedule-table.active {
+        display: table;
+      }
+      
+</style>
+</head>
+<body>
+  <header>        
+    <div class="menu bg-dark text-white d-flex justify-content-end align-items-center">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-image: url(img/degradado.jpeg);background-size: cover;background-position: center;background-repeat: no-repeat;width: 100%;">
+        <div class="container">
+          <a class="nav-link active text-info" href="#"><img src="img/logo_white.png" alt="" width="45" height="45"></a>
+            <a class="navbar-brand " href="#">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white p-3" href="index.html"><span><img src="iconos/casita.png" alt="" width="20" height="20"></span> Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white p-3" href="quienessomos.html"><span><img src="iconos/personas.png" alt="" width="20" height="20"></span> ¿Quienes Somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white p-3" href="admision.html"><span><img src="iconos/libro-cerrado.png" alt="" width="20" height="20"></span> Admision</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-white p-3  dropdown-toggle" href="#" id="navbarDropdown" role="button"  data-bs-toggle="dropdown" aria-expanded="false"><span><img src="iconos/gorro-de-graduacion.png" alt="" width="20" height="20"></span> Nuestras Carreras</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="sistemas.html">Sistemas Informaticos</a></li>
+                      <li><a class="dropdown-item" href="secretariado.html">Secretariado Ejecutivo</a></li>
+                      <li><a class="dropdown-item" href="telecom.html">Telecomunicaciones</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white p-3" href="pvirtual.html"><span><img src="iconos/nube.png" alt="" width="20" height="20"></span> Plataforma Virtual</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white p-3" href="contact.html"><span><img src="iconos/agenda.png" alt="" width="20" height="20"></span> Contácto</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+</header>
+<main class="jumbotron jumbotron-fluid jumbotron-custom">
+    <div class="container text-center">
+        <h1 class="display-4 p-2">Telecomunicaciones</h1>
+        <p class="lead">Conéctate con el futuro de la comunicación y la tecnología.</p>
+        <a class="btn btn-secondary btn-lg" href="#acerca" role="button">Descubre más</a>
+    </div>
+  </main>
+
+  <section id="acerca" class="container py-5">
+    <h2 class="text-center mb-4">Acerca de la Carrera</h2>
+    <p class="lead">Telecomunicaciones se enfoca en el diseño, desarrollo, implementación y gestión de sistemas de comunicación que transmiten información a través de diferentes medios. Los profesionales en esta área son cruciales para mantener el mundo conectado, desde redes móviles hasta sistemas de transmisión de datos y radiodifusión.</p>
+    <p>Durante la carrera, los estudiantes adquieren conocimientos en áreas como teoría de la comunicación, procesamiento de señales, redes de comunicación, sistemas de transmisión, antenas y propagación, y normativas del sector.</p>
+</section>
+
+<section id="especializaciones" class="bg-light fs-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Áreas de Especialización</h2>
+        <div class="row row-cols-1 row-cols-md-3 fs-6">
+            <div class="col">
+                <div class="card h-100 card-effect">
+                    <img src="cards/tele.webp" class="card-img-top" alt="Redes Móviles">
+                    <div class="card-body">
+                        <h5 class="card-title">Redes Móviles</h5>
+                        <p class="card-text">Diseño y gestión de infraestructuras de comunicación inalámbrica.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 card-effect">
+                    <img src="cards/tele2.png" class="card-img-top" alt="Sistemas de Comunicación">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistemas de Comunicación</h5>
+                        <p class="card-text">Desarrollo y análisis de sistemas para la transmisión de información.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 card-effect">
+                    <img src="cards/tele3.jpg" class="card-img-top" alt="Telecomunicaciones Ópticas">
+                    <div class="card-body">
+                        <h5 class="card-title">Telecomunicaciones Ópticas</h5>
+                        <p class="card-text">Tecnologías de transmisión de datos a través de fibra óptica.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 card-effect">
+                    <img src="cards/tele4.jpg" class="card-img-top" alt="Internet de las Cosas (IoT)">
+                    <div class="card-body">
+                        <h5 class="card-title">Internet de las Cosas (IoT)</h5>
+                        <p class="card-text">Conexión e interacción de dispositivos a través de internet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 card-effect">
+                    <img src="cards/tele5.png" class="card-img-top" alt="Radiocomunicaciones">
+                    <div class="card-body">
+                        <h5 class="card-title">Radiocomunicaciones</h5>
+                        <p class="card-text">Transmisión y recepción de información mediante ondas de radio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 card-effect">
+                    <img src="cards/tele6.jpg" class="card-img-top" alt="Seguridad en Telecomunicaciones">
+                    <div class="card-body">
+                        <h5 class="card-title">Seguridad en Telecomunicaciones</h5>
+                        <p class="card-text">Protección de redes y sistemas de comunicación contra amenazas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="flex flex-col md:flex-row gap-8 items-start">
+  <div class="w-full md:w-2/3">
+    <div class="table-container">
+      <div class="table-buttons">
+        <button class="table-button active" onclick="showTable('firstYearTable')">
+          <i class="fas fa-desktop"></i>
+          Primer Año
+        </button>
+        <button class="table-button" onclick="showTable('secondYearTable')">
+          <i class="fas fa-code"></i>
+          Segundo Año
+        </button>
+        <button class="table-button" onclick="showTable('thirdYearTable')">
+          <i class="fas fa-network-wired"></i>
+          Tercer Año
+        </button>
+      </div>
+
+<table class="schedule-table active" id="firstYearTable">
+  <thead>
+    <tr>
+      <th>N°</th>
+      <th>CÓDIGO</th>
+      <th>ÁREAS DE SABERES Y CONOCIMIENTOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td class="code">MAT - 101</td>
+      <td class="subject">Matemática</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="code">TSO - 102</td>
+      <td class="subject">Taller de Sistemas Operativos I</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="code">FEE - 103</td>
+      <td class="subject">Fundamentos de Electricidad Y Electrónica</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="code">INA - 104</td>
+      <td class="subject">Informática Aplicada</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="code">ING - 105</td>
+      <td class="subject">Inglés Técnico I</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td class="code">THW - 106</td>
+      <td class="subject">Taller De Hardware I</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="code">TER - 107</td>
+      <td class="subject">Tecnología De Redes I</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td class="code">TEL - 108</td>
+      <td class="subject">Telecomunicaciones I</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td class="code">PRG - 109</td>
+      <td class="subject">Programación</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="schedule-table" id="secondYearTable">
+  <thead>
+    <tr>
+      <th>N°</th>
+      <th>CÓDIGO</th>
+      <th>ÁREAS DE SABERES Y CONOCIMIENTOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td class="code">TLM - 201</td>
+      <td class="subject">Telemática</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="code">TEL - 202</td>
+      <td class="subject">Telecomunicaciones II</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="code">TSO - 203</td>
+      <td class="subject">Taller de Sistemas Operativos II</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="code">HDW - 204</td>
+      <td class="subject">Hardware II</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="code">TER - 205</td>
+      <td class="subject">Tecnología de Redes II</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td class="code">RCO - 206</td>
+      <td class="subject">Redes Convergentes I</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="code">ING - 207</td>
+      <td class="subject">Inglés Técnico II</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td class="code">TMO - 208</td>
+      <td class="subject">Telecomunicaciones Móviles</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="schedule-table" id="thirdYearTable">
+  <thead>
+    <tr>
+      <th>N°</th>
+      <th>CÓDIGO</th>
+      <th>ÁREAS DE SABERES Y CONOCIMIENTOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td class="code">STE - 301</td>
+      <td class="subject">Sistemas de Telecomunicaciones</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="code">TRE - 302</td>
+      <td class="subject">Tecnologías de Redes III</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="code">RCO - 303</td>
+      <td class="subject">Redes Convergentes II</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="code">TDG - 304</td>
+      <td class="subject">Taller de Grado</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="code">RET - 305</td>
+      <td class="subject">Regulaciones en las Telecomunicaciones</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td class="code">TEL - 306</td>
+      <td class="subject">Telecomunicaciones III</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="code">SIR - 307</td>
+      <td class="subject">Seguridad Industrial de Redes</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="code">TVI - 308</td>
+      <td class="subject">Tecnología de Video vigilancia</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="flex justify-center mb-8">
+<a href="https://intjem.edu.bo/pdf/Contenidos_Anuales_Telecom.pdf" 
+class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300" 
+target="_blank">
+<i class="fas fa-download mr-2"></i>
+<center><button class="table-button active text-decoration-none">Descargar en PDF</button></center>
+</a>
+</div>
+</div>
+<footer>
+  <div class="final p-3 text-center" style="background-color: rgb(56, 56, 141);">
+    <img src="img/logo_white.png" alt="" class="p-2">
+  </div>
+  <hr>
+  <div class="mapa text-center">
+    <div class="row">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60726.73763883304!2d-67.108205!3d-17.959135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e2b0a679d6e793%3A0x4ea39a9506e08039!2zSW5zdGl0dXRvIFTDqWNuaWNvIEplc8O6cyBNYXLDrWE!5e0!3m2!1ses!2sus!4v1744423331849!5m2!1ses!2sus" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="col-sm col-md col-xl"></iframe>
+    </div>
+  </div>
+  <div class="enlaces p-5 text-center" style="background-color: rgb(22, 64, 100);">
+    <a href="https://www.facebook.com/IntJem/"><img src="iconos/facebook (1).png" alt="" class="p-2"></a>
+    <a href="https://plataforma.intjem.edu.bo/"><img src="iconos/plataforma-digital.png" alt="" class="p-2"></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox"><img src="iconos/gmail.png" alt="" class="p-2"></a>
+    <a href="https://x.com/InT_JesusMaria"><img src="iconos/gorjeo.png" alt="" class="p-2"></a>
+    <a href="https://www.instagram.com/intjem.bo/"><img src="iconos/instagram.png" alt="" class="p-2"></a>
+  </div>
+  <div class="footer-copyright">
+    <div class="p-2 text-center text-white" style="background-color: rgb(12, 27, 54);">
+        <a>Copyright © 2025 Instituto Técnico Jesús María Todos los derechos reservados.</a>
+    </div>
+</footer>
+<script>
+  // Script para cerrar el menú al hacer clic en un enlace
+  document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          const navbarCollapse = document.querySelector(".navbar-collapse");
+          if (navbarCollapse.classList.contains("show")) {
+            navbarCollapse.classList.remove("show");
+          }
+        });
+      });
+
+      function showTable(tableId) {
+        // Ocultar todas las tablas
+        document.querySelectorAll('.schedule-table').forEach(table => {
+          table.classList.remove('active');
+        });
+        
+        // Mostrar la tabla seleccionada
+        document.getElementById(tableId).classList.add('active');
+        
+        // Actualizar botones activos
+        document.querySelectorAll('.table-button').forEach(button => {
+          button.classList.remove('active');
+        });
+        event.currentTarget.classList.add('active');
+      }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
